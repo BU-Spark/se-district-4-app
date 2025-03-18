@@ -1,10 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --font-lora: "Lora", serif;
+}
+
+.lora {
+  font-family: var(--font-lora);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lora-light {
+  font-family: var(--font-lora);
+  font-weight: 400; /* Lora's lightest available */
+}
+
 
 @layer base {
   :root {
