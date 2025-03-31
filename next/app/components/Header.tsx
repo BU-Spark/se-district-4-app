@@ -8,6 +8,15 @@ import { FiMenu } from "react-icons/fi";
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinks = [
+    { label: "Help/311", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Guide", href: "#" },
+    { label: "Public Notice", href: "#" },
+    { label: "Events", href: "#" },
+    { label: "Social Media", href: "/media" }, // <-- now links to /media
+  ];
+
   return (
     <header className="bg-[#0E1A2B] text-white py-8 px-6 flex items-center w-full justify-between relative">
       <Image
@@ -28,20 +37,13 @@ export function Header() {
           menuOpen ? "block pt-6 pb-6" : "hidden"
         }`}
       >
-        {[
-          "Help/311",
-          "Home",
-          "Guide",
-          "Public Notice",
-          "Events",
-          "Social Media",
-        ].map((item) => (
+        {navLinks.map(({ label, href }) => (
           <a
-            key={item}
-            href="#"
+            key={label}
+            href={href}
             className="block py-2 md:inline-block md:py-0 hover:underline"
           >
-            {item}
+            {label}
           </a>
         ))}
       </nav>
