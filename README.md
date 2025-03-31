@@ -20,7 +20,11 @@ Welcome to the District 4 Community App! This user-friendly platform is designed
 ## Getting Started
 To get started with the D4 Dashboard, you'll need to have [node.js](https://nodejs.org/) and the [Firebase CLI](https://firebase.google.com/docs/cli) installed on your machine. Once you've cloned this repository to your local machine, navigate to the project directory and run `npm install` to install all necessary dependencies. 
 
-To start the app in development mode, run `npm start`. This will launch the app in your default browser, where you can begin using it.
+To start the app in development mode, run `npm start`. This will launch the app in your default browser, where you can begin using it. 
+
+or
+
+npm run dev 
 
 ## Setting Up Your `.env` File in Strapi
 
@@ -108,3 +112,14 @@ There are no known bugs, but there are some limitations with the current impleme
 If you'd like to contribute to the D4 Dashboard, we welcome your help! To add yourself as a collaborator, simply open a Pull Request and modify the `COLLABORATORS` file by adding your GitHub username on a new line.
 
 Please be sure to follow the Pull Request template, and include a descriptive title in the following format: `[Project Name]: <Descriptive Title>`.
+
+
+## Calendar Functionality
+```
+npm install @fullcalendar/react @fullcalendar/daygrid @fullcalendar/google-calendar
+```
+
+and:
+```
+npm install @fullcalendar/timegrid
+```
