@@ -83,6 +83,7 @@ function CalendarPage() {
 
   return (
     <div className="calendar-container">
+      <Header/>
 
       {/* View Switch Tabs */}
       <div className="tabs">
