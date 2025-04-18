@@ -1,3 +1,15 @@
+<!-- <<<<<<< resource-page -->
+import ResourcePage from "@/resources/ResourcePage";
+
+export default function Home() {
+  return (
+    <main >
+      <ResourcePage />
+    </main>
+
+  );
+}
+=======
 import { Header } from "@/app/components/Header";
 import { HeroSection } from "@/app/components/HeroSection";
 import { QuickLinks } from "@/app/components/QuickLinks";
@@ -13,3 +25,4 @@ export default function HomePage() {
     </main>
   );
 }
+<!-- >>>>>>> dev -->
