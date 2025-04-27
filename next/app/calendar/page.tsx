@@ -79,22 +79,14 @@ function CalendarPage() {
   const CALENDAR_ID = process.env.NEXT_PUBLIC_CALENDAR_ID;
 
 
-  const [view, setView] = useState('dayGridMonth'); // Default to month view
-
   return (
     <div className="calendar-container">
 
-
-      {/* View Switch Tabs */}
-      <div className="tabs">
-        <button
-          className={view === 'dayGridMonth' ? 'active' : ''}
           onClick={() => setView('dayGridMonth')}
         >
           Monthly View
         </button>
-        <button
-          className={view === 'timeGridWeek' ? 'active' : ''}
+
           onClick={() => setView('timeGridWeek')}
         >
           Weekly View

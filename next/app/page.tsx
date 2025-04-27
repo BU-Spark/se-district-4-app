@@ -1,8 +1,37 @@
+
 import { Header } from "@/app/components/Header";
 import { HeroSection } from "@/app/components/HeroSection";
 import { QuickLinks } from "@/app/components/QuickLinks";
 import { UpcomingEvents } from "@/app/components/UpcomingEvents";
 import Dfour from "./components/Dfour";
+
+<!-- <<<<<<< resource-page -->
+import ResourcePage from "@/resources/ResourcePage";
+
+
+export default function HomePage() {
+  return (
+
+    <main className="min-h-screen w-full overflow-x-hidden">
+      <Header />
+      <HeroSection />
+      <QuickLinks />
+      <UpcomingEvents />
+      <Dfour />
+    </main>
+
+    <main >
+      <ResourcePage />
+    </main>
+
+
+  );
+}
+
+import { Header } from "@/app/components/Header";
+import { HeroSection } from "@/app/components/HeroSection";
+import { QuickLinks } from "@/app/components/QuickLinks";
+import { UpcomingEvents } from "@/app/components/UpcomingEvents";
 
 export default function HomePage() {
   return (
@@ -11,7 +40,6 @@ export default function HomePage() {
       <HeroSection />
       <QuickLinks />
       <UpcomingEvents />
-      <Dfour />
     </main>
   );
 }
