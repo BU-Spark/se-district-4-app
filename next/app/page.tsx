@@ -2,6 +2,7 @@ import { Header } from "@/app/components/Header";
 import { HeroSection } from "@/app/components/HeroSection";
 import { QuickLinks } from "@/app/components/QuickLinks";
 import { UpcomingEvents } from "@/app/components/UpcomingEvents";
+import Dfour from "./components/Dfour";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <QuickLinks />
       <UpcomingEvents />
+      <Dfour />
     </main>
   );
 }
