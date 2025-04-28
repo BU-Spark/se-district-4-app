@@ -3,7 +3,7 @@
 import { FaEnvelope, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 
-export function MailingListBanner() {
+export function MailingPopup() {
   // State to control whether the banner is visible
   const [isVisible, setIsVisible] = useState(true);
 
