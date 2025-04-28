@@ -136,4 +136,6 @@ in a .env once you cd next from the root directory:
 NEXT_PUBLIC_CALENDAR_API_KEY=your API key
 NEXT_PUBLIC_CALENDAR_ID=yourid@group.calendar.google.com
 ```
-- once calendar is public, change the NEXT_PUBLIC_CALENDAR_ID to the client's calendar.  
+- once calendar is public, change the NEXT_PUBLIC_CALENDAR_ID to the client's calendar.
+- make sure all buttons navigate to webpages, most are empty right now
+- flesh out the gallery feature  
