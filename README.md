@@ -123,3 +123,17 @@ and:
 ```
 npm install @fullcalendar/timegrid
 ```
+
+## Resource Page functionality
+npm install swiper
+
+
+
+## Future Considerations:
+in a .env once you cd next from the root directory:
+
+```
+NEXT_PUBLIC_CALENDAR_API_KEY=your API key
+NEXT_PUBLIC_CALENDAR_ID=yourid@group.calendar.google.com
+```
+- once calendar is public, change the NEXT_PUBLIC_CALENDAR_ID to the client's calendar.  
