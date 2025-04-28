@@ -4,6 +4,10 @@ import { QuickLinks } from "@/app/components/QuickLinks";
 import { UpcomingEvents } from "@/app/components/UpcomingEvents";
 import Dfour from "./components/Dfour";
 import ResourcePage from "@/resources/ResourcePage";
+import { MailingPopup } from "./components/mailingpopup";
+import { MailingListBanner } from "./components/MailingBanner";
+import { FooterBanner } from "./components/footer";
+
 
 export default function HomePage() {
   return (
@@ -14,6 +18,9 @@ export default function HomePage() {
       <UpcomingEvents />
       <Dfour />
       <ResourcePage />
+      <MailingListBanner />
+      <MailingPopup />
+      <FooterBanner />
     </main>
   );
 }

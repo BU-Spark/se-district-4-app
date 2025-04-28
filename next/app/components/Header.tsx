@@ -6,37 +6,34 @@ import { FiMenu } from "react-icons/fi";
 
 
 import { assets } from '@/app/assets/assets.js';
+import Link from "next/link";
 
 // Header Component
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Help/311", href: "#" },
+    { label: "Help/311", href: "https://www.boston.gov/departments/boston-311", external: true },
     { label: "Home", href: "/" },
     { label: "Guide", href: "#" },
     { label: "Public Notice", href: "#" },
-    { label: "Events", href: "#" },
+    { label: "Events", href: "/calendar" }, // <-- now links to calendar
     { label: "Social Media", href: "/media" }, // <-- now links to /media
   ];
 
   return (
     <header className="bg-[#0E1A2B] text-white py-8 px-6 flex items-center w-full justify-between relative">
-      <Image
-
-        src={assets.seal}
-        alt="District 4 Logo"
-        width={70}
-        height={70}
-        className="mr-10 bg-white rounded-full"
-
-        src="/Logo.png"
-        alt="District 4 Logo"
-        width={70}
-        height={70}
-        className="mr-10"
-
-      />
+      <Link href="/" passHref>
+    
+          <Image
+            src={assets.seal}
+            alt="District 4 Logo"
+            width={70}
+            height={70}
+            className="mr-10 bg-white rounded-full"
+          />
+        
+      </Link>
       <button
         className="md:hidden text-white text-2xl"
         onClick={() => setMenuOpen(!menuOpen)}
