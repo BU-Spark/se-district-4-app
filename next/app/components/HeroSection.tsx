@@ -1,61 +1,3 @@
-
-// import { assets } from "../assets/assets";
-// import Image from 'next/image';
-// // Hero Section Component
-// export function HeroSection() {
-//   return (
-
-//     // <section className="text-center py-16">
-//     //   <h1 className="text-5xl font-normal lora-light mb-4 text-center py-16">Welcome to</h1>
-//     //   <h2 className="text-7xl font-extrabold italic lora text-center py-16">District 4</h2>
-//     //   <div className="mt-14 w-full border-t border-gray-500 text-center py-16"></div>
-//     // </section>
-//     // <div className="relative w-full h-[300px] overflow-hidden shadow-md">
-
-//     //   {/* Background Image */}
-//     //   <Image
-//     //     src={assets.welcome}
-//     //     alt="District Background"
-//     //     fill
-//     //     className="object-cover brightness-110 opacity-80"
-//     //   />
-
-//     //   {/* Optional: White overlay to soften even more */}
-//     //   <div className="absolute inset-0 bg-white bg-opacity-30"></div>
-
-//     //   {/* Text */}
-//     //   <div className="absolute inset-0 flex flex-col items-center justify-center text-black text-center px-4">
-//     //     <h2 className="text-5xl font-normal lora-light ">Welcome to</h2>
-//     //     <h1 className="text-7xl font-extrabold italic lora ">District 4</h1>
-//     //   </div>
-//     // </div >
-
-//     <div className="relative w-fulloverflow-hidden">
-//       <div className="relative w-full h-[300px] overflow-hidden shadow-md">
-
-//         {/* Background Image */}
-//         <Image
-//           src={assets.welcome}
-//           alt="District Background"
-//           fill
-//           className="object-cover brightness-110 opacity-80"
-//         />
-
-//         {/* Optional: White overlay to soften even more */}
-//         <div className="absolute inset-0 bg-white bg-opacity-30"></div>
-
-//         {/* Text */}
-//         <div className="absolute inset-0 flex flex-col items-center justify-center text-black text-center px-4">
-//           <h2 className="text-5xl md:text-6xl font-normal lora-light">Welcome to</h2>
-//           <h1 className="text-7xl md:text-8xl font-extrabold italic lora">District 4</h1>
-//         </div>
-
-//       </div>
-//     </div>
-
-//   );
-// }
-
 import { assets } from "../assets/assets";
 import Image from 'next/image';
 
@@ -63,7 +5,6 @@ export function HeroSection() {
   return (
     <div className="relative w-screen overflow-hidden ">
       <div className="relative w-screen h-[300px] shadow-md overflow-hidden">
-
         {/* Background Image */}
         <Image
           src={assets.welcome}
@@ -83,18 +24,7 @@ export function HeroSection() {
           <h2 className="text-5xl md:text-6xl font-normal lora-light">Welcome to</h2>
           <h1 className="text-7xl md:text-8xl font-extrabold italic lora">District 4</h1>
         </div>
-
       </div>
     </div>
-
-// Hero Section Component
-export function HeroSection() {
-  return (
-    <section className="text-center py-16">
-      <h1 className="text-5xl font-normal lora-light mb-4">Welcome to</h1>
-      <h2 className="text-7xl font-extrabold italic lora">District 4</h2>
-      <div className="mt-14 w-full border-t border-gray-500"></div>
-    </section>
-
   );
 }
