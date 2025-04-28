@@ -1,3 +1,4 @@
+import { Montserrat } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -5,7 +6,9 @@ export default {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+
 		'./resources/**/*.{js,ts,jsx,tsx}',
+
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
@@ -56,11 +59,20 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+
+			},
+			fontFamily: {
+				Montserrat: ['Montserrat']
+			},
+		}
+	},
+	plugins: [require("tailwindcss-animate")],
+
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
-=======
+
     darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",

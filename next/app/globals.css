@@ -1,8 +1,10 @@
-/* <<<<<<< resource-page
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 =======
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
@@ -95,5 +97,3 @@ html, body {
     @apply bg-background text-foreground;
   }
 }
->>>>>>> dev
- */
