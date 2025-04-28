@@ -6,6 +6,7 @@ import Dfour from "./components/Dfour";
 import ResourcePage from "@/resources/ResourcePage";
 import { MailingPopup } from "./components/mailingpopup";
 import { MailingListBanner } from "./components/MailingBanner";
+import { FooterBanner } from "./components/footer";
 
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ResourcePage />
       <MailingListBanner />
       <MailingPopup />
+      <FooterBanner />
     </main>
   );
 }
