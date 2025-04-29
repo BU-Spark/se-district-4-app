@@ -15,24 +15,24 @@ export function Header() {
   const navLinks = [
     { label: "Help/311", href: "https://www.boston.gov/departments/boston-311", external: true },
     { label: "Home", href: "/" },
-    { label: "Guide", href: "#" },
-    { label: "Public Notice", href: "#" },
-    { label: "Events", href: "/calendar" }, // <-- now links to calendar
+    // { label: "Guide", href: "#" },
+    { label: "Public Notice", href: "https://www.boston.gov/public-notices" },
+    // { label: "Events", href: "/calendar" }, // <-- now links to calendar
     { label: "Social Media", href: "/media" }, // <-- now links to /media
   ];
 
   return (
     <header className="bg-[#0E1A2B] text-white py-8 px-6 flex items-center w-full justify-between relative">
       <Link href="/" passHref>
-    
-          <Image
-            src={assets.seal}
-            alt="District 4 Logo"
-            width={70}
-            height={70}
-            className="mr-10 bg-white rounded-full"
-          />
-        
+
+        <Image
+          src={assets.seal}
+          alt="District 4 Logo"
+          width={70}
+          height={70}
+          className="mr-10 bg-white rounded-full"
+        />
+
       </Link>
       <button
         className="md:hidden text-white text-2xl"
@@ -45,9 +45,7 @@ export function Header() {
         className={`absolute top-full left-0 w-full bg-[#0E1A2B] text-center transition-all duration-300 ease-in-out md:static md:flex md:space-x-12 text-sm lora ${menuOpen ? "block pt-6 pb-6" : "hidden"
           }`}
 
-        className={`absolute top-full left-0 w-full bg-[#0E1A2B] text-center transition-all duration-300 ease-in-out md:static md:flex md:space-x-12 text-sm lora ${
-          menuOpen ? "block pt-6 pb-6" : "hidden"
-        }`}
+      // className={`absolute top-full left-0 w-full bg-[#0E1A2B] text-center transition-all duration-300 ease-in-out md:static md:flex md:space-x-12 text-sm lora ${menuOpen ? "block pt-6 pb-6" : "hidden"}`}
 
       >
         {navLinks.map(({ label, href }) => (
@@ -59,6 +57,14 @@ export function Header() {
             {label}
           </a>
         ))}
+
+        {/* Special Link for Community Feedback
+         <Link
+          href="/feedback"
+          className="block py-2 md:inline-block md:py-0 hover:underline bg-red-600 px-4 rounded text-white font-semibold ml-4"
+        >
+          Community Feedback
+        </Link> */}
       </nav>
     </header>
   );

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Dfour = () => {
     return (
-        <div className='mt-[-10px] ml-10'>
+        <div id="dfour-section" className='mt-10 ml-10'>
             <h2 className='text-5xl font-extrabold italic lora '>City Councilor</h2>
             <hr className=' mt-2  h-[12px] w-[1190px] bg-indigo-950 border-2 border-indigo-900' />
             <div className='mt-8'>
@@ -51,14 +51,18 @@ const Dfour = () => {
                 <hr className=' mt-2  h-[12px] w-[1190px] bg-indigo-950 border-2 border-indigo-900' />
                 <div className='mt-8 w-[316px] h-[390px] object-cover rounded-t-[50px] rounded-b-[50px] bg-gray-300 border-2 border-black'>
 
-                    <Image
-                        src={assets.AnushreeSahay}
-                        alt="Anushree Sahay"
-                        className='relative justify-self-center mt-3 border-[3px] border-gray-500 rounded-full h-[192px] w-[200px] '
-                    />
-                    <h2 className='m-3 text-2xl text-indigo-900 font-extrabold'>Director of Policy and Communications</h2>
+                    <a href="mailto:anushree.sahay@boston.gov">
+                        <Image
+                            src={assets.AnushreeSahay}
+                            alt="Anushree Sahay"
+                            className='relative justify-self-center mt-3 border-[3px] border-gray-500 rounded-full h-[192px] w-[200px] '
+                        />
+                        <h2 className='m-3 text-2xl text-indigo-900 font-extrabold'>Director of Policy and Communications</h2>
 
-                    <button className='mt-5 ml-16 w-40 h-7 rounded-3xl bg-indigo-950 font-Montserrat text-white'>SEND AN EMAIL</button>
+                        <button className='mt-5 ml-16 w-40 h-7 rounded-3xl bg-indigo-950 font-Montserrat text-white'>SEND AN EMAIL</button>
+
+
+                    </a>
 
                 </div>
 

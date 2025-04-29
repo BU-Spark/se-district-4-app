@@ -139,3 +139,10 @@ NEXT_PUBLIC_CALENDAR_ID=yourid@group.calendar.google.com
 - once calendar is public, change the NEXT_PUBLIC_CALENDAR_ID to the client's calendar.
 - make sure all buttons navigate to webpages, most are empty right now
 - flesh out the gallery feature  
+
+We commented out the Events from the navbar,
+the calendar,
+the upcoming events from the main page,
+the news and update and upcoming events from the resource page,
+We changed the Quick links in the main page ,we have added different resources from the figma as we did not had the links.
+
