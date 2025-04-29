@@ -48,12 +48,12 @@ import Link from "next/link";
 // Quick Links Component
 export function QuickLinks() {
   const links = [
-    { text: "Essential Services", icon: <FaHospital size={20} />, href: "/essential-services" },
-    { text: "Get Involved", icon: <FaHandsHelping size={20} />, href: "/get-involved" },
+    { text: "Mayor's Office", icon: <FaHospital size={20} />, href: "/mayors-office", link: "https://www.boston.gov/departments/mayors-office " },
+    { text: "Schools", icon: <FaHandsHelping size={20} />, href: "/schools", link: "https://www.boston.gov/departments/schools" },
     { text: "Subscribe to Mailing List", icon: <FaEnvelope size={20} />, href: "/subscribe", link: "https://lp.constantcontactpages.com/su/6umkRa8" },
-    { text: "Civic Associations", icon: <FaLandmark size={20} />, href: "/civic-associations" },
+    { text: "Housing", icon: <FaLandmark size={20} />, href: "/housing", link: "https://www.boston.gov/departments/housing" },
     { text: "All Resources", icon: <FaBook size={20} />, href: "/resources" },
-    { text: "About D4", icon: <FaInfoCircle size={20} />, href: "/about" },
+    { text: "About D4", icon: <FaInfoCircle size={20} />, href: "#dfour-section" },
   ];
 
   return (
@@ -61,7 +61,7 @@ export function QuickLinks() {
       {links.map(({ text, icon, href, link }) => (
         link ? (
           // If 'link' exists, use an external <a>
-          <a 
+          <a
             key={text}
             href={link}
             target="_blank"

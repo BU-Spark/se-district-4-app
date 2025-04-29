@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import { assets } from '@/app/assets/assets.js';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+// import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { Header } from '../components/Header';
 
@@ -16,7 +16,7 @@ export default function ResourcePage() {
     const resources = [
         { title: "311: Public Service Number", image: assets.bos311Icon, link: "https://www.boston.gov/departments/boston-311" },
         { title: "Who is your Boston City Counsellor?", image: assets.city_council_icon, link: "https://www.boston.gov/departments/city-council/who-my-boston-city-councilor" },
-        { title: "Housing", image: assets.building, link: "https://www.boston.gov/search?page=2&query=all%20resources&" },
+        { title: "Housing", image: assets.building, link: "https://www.boston.gov/departments/housing" },
         { title: "Alcoholic Beverages Licensing", image: assets.licensing, link: "https://www.boston.gov/departments/licensing-board/apply-alcoholic-beverages-retail-license" },
         { title: "Business Support", image: assets.vendor, link: "https://www.boston.gov/search?utf8=%E2%9C%93&query=business+support" },
         { title: "Mayor’s Office", image: assets.stateOffices, link: "https://www.boston.gov/departments/mayors-office " },
@@ -40,75 +40,75 @@ export default function ResourcePage() {
         { title: "Veterans", image: assets.veteransServicesLogo, link: "https://www.boston.gov/departments/veterans-services" },
     ];
 
-    const news = [
-        {
-            headlines: "Food Drive",
-            content: "I am pleased to inform you that starting next week, we will begin much-needed repairs on Main Street and the Elm Street Bridge.",
-            date: "05/29/2024",
-        },
-        {
-            headlines: "Community Clean-Up Day",
-            content: "Join us this Saturday for a neighborhood clean-up event. Bags and gloves will be provided at the Community Center.",
-            date: "06/02/2024",
-        },
-        {
-            headlines: "Public Safety Meeting",
-            content: "City officials will host a town hall to address recent safety concerns and discuss new policies for better community protection.",
-            date: "06/10/2024",
-        },
-        {
-            headlines: "New Park Opening",
-            content: "We’re excited to announce the grand opening of the new Oakwood Park this weekend. Bring your family and enjoy food, music, and fun!",
-            date: "06/15/2024",
-        },
-        {
-            headlines: "School Supply Giveaway",
-            content: "Free school supplies will be distributed to students in need at the D4 Community Center. First come, first served.",
-            date: "07/01/2024",
-        },
-        {
-            headlines: "Summer Youth Programs Begin",
-            content: "Registration is now open for the city’s free summer youth programs, including sports, arts, and educational camps.",
-            date: "07/05/2024",
-        },
-        {
-            headlines: "Infrastructure Improvement",
-            content: "Starting next month, we will begin sidewalk and lighting upgrades throughout key areas of the district.",
-            date: "07/20/2024",
-        },
-        {
-            headlines: "Fire Safety Awareness Week",
-            content: "The Fire Department will host safety demos, school visits, and giveaways to educate families on fire preparedness.",
-            date: "08/10/2024",
-        },
-    ];
+    // const news = [
+    //     {
+    //         headlines: "Food Drive",
+    //         content: "I am pleased to inform you that starting next week, we will begin much-needed repairs on Main Street and the Elm Street Bridge.",
+    //         date: "05/29/2024",
+    //     },
+    //     {
+    //         headlines: "Community Clean-Up Day",
+    //         content: "Join us this Saturday for a neighborhood clean-up event. Bags and gloves will be provided at the Community Center.",
+    //         date: "06/02/2024",
+    //     },
+    //     {
+    //         headlines: "Public Safety Meeting",
+    //         content: "City officials will host a town hall to address recent safety concerns and discuss new policies for better community protection.",
+    //         date: "06/10/2024",
+    //     },
+    //     {
+    //         headlines: "New Park Opening",
+    //         content: "We’re excited to announce the grand opening of the new Oakwood Park this weekend. Bring your family and enjoy food, music, and fun!",
+    //         date: "06/15/2024",
+    //     },
+    //     {
+    //         headlines: "School Supply Giveaway",
+    //         content: "Free school supplies will be distributed to students in need at the D4 Community Center. First come, first served.",
+    //         date: "07/01/2024",
+    //     },
+    //     {
+    //         headlines: "Summer Youth Programs Begin",
+    //         content: "Registration is now open for the city’s free summer youth programs, including sports, arts, and educational camps.",
+    //         date: "07/05/2024",
+    //     },
+    //     {
+    //         headlines: "Infrastructure Improvement",
+    //         content: "Starting next month, we will begin sidewalk and lighting upgrades throughout key areas of the district.",
+    //         date: "07/20/2024",
+    //     },
+    //     {
+    //         headlines: "Fire Safety Awareness Week",
+    //         content: "The Fire Department will host safety demos, school visits, and giveaways to educate families on fire preparedness.",
+    //         date: "08/10/2024",
+    //     },
+    // ];
 
-    const upcomingevents = [
-        {
-            heading: "Public Hearing Docket #0335",
-            content: "Order for a hearing regarding all City of Boston grants administered by the Boston Fire Department.",
-            date: "April 25th 2025",
-            time: "10:00AM",
-            location: "Iannella Chamber, 5th Floor Boston City Hall Boston, MA 02201",
-            link: "https://www.boston.gov/public-notices/16359466"
-        },
-        {
-            heading: "Public Hearing Docket #0336",
-            content: "Order for a series of hearings regarding all City of Boston grants administered by the Boston Police Department.",
-            date: "May 23rd 2025",
-            time: "10:00AM",
-            location: "Iannella Chamber, 5th Floor Boston City Hall Boston, MA 02201",
-            link: "https://www.boston.gov/public-notices/16363426"
-        },
-        {
-            heading: "Public Hearing Docket #0145",
-            content: " Petition for a Special Law Re: To establish the Commission of Inspectors General on Financial Management.",
-            date: "June 5th 2025",
-            time: '02:00PM',
-            location: "Iannella Chamber, 5th Floor Boston City Hall Boston, MA 02201",
-            link: "https://www.boston.gov/public-notices/16363171"
-        }
-    ];
+    // const upcomingevents = [
+    //     {
+    //         heading: "Public Hearing Docket #0335",
+    //         content: "Order for a hearing regarding all City of Boston grants administered by the Boston Fire Department.",
+    //         date: "April 25th 2025",
+    //         time: "10:00AM",
+    //         location: "Iannella Chamber, 5th Floor Boston City Hall Boston, MA 02201",
+    //         link: "https://www.boston.gov/public-notices/16359466"
+    //     },
+    //     {
+    //         heading: "Public Hearing Docket #0336",
+    //         content: "Order for a series of hearings regarding all City of Boston grants administered by the Boston Police Department.",
+    //         date: "May 23rd 2025",
+    //         time: "10:00AM",
+    //         location: "Iannella Chamber, 5th Floor Boston City Hall Boston, MA 02201",
+    //         link: "https://www.boston.gov/public-notices/16363426"
+    //     },
+    //     {
+    //         heading: "Public Hearing Docket #0145",
+    //         content: " Petition for a Special Law Re: To establish the Commission of Inspectors General on Financial Management.",
+    //         date: "June 5th 2025",
+    //         time: '02:00PM',
+    //         location: "Iannella Chamber, 5th Floor Boston City Hall Boston, MA 02201",
+    //         link: "https://www.boston.gov/public-notices/16363171"
+    //     }
+    // ];
 
     const [showMore, setShowMore] = useState(false);
     const visibleResource = showMore ? resources : resources.slice(0, 6);
@@ -147,13 +147,13 @@ export default function ResourcePage() {
                     </button>
                 </div>
 
-                {/* NEWS AND UPDATES */}
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-950 mt-16 mb-4">
-                    NEWS AND UPDATES
-                </h1>
-                <hr className="mb-6" />
+                {/* // NEWS AND UPDATES
+                // <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-950 mt-16 mb-4">
+                //     NEWS AND UPDATES
+                // </h1>
+                // <hr className="mb-6" />  */}
 
-                <div className="relative">
+                {/* <div className="relative">
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={20}
@@ -189,16 +189,16 @@ export default function ResourcePage() {
                         ))}
 
                         {/* Custom navigation buttons */}
-                        <div className="custom-prev absolute left-[-10px] top-1/2 transform -translate-y-1/2 z-50 bg-white p-2 rounded-full shadow-md hover:scale-110 transition cursor-pointer">
+                {/* <div className="custom-prev absolute left-[-10px] top-1/2 transform -translate-y-1/2 z-50 bg-white p-2 rounded-full shadow-md hover:scale-110 transition cursor-pointer">
                             <ChevronLeft className="text-blue-900" size={24} />
                         </div>
                         <div className="custom-next absolute right-[-10px] top-1/2 transform -translate-y-1/2 z-50 bg-white p-2 rounded-full shadow-md hover:scale-110 transition cursor-pointer">
                             <ChevronRight className="text-blue-900" size={24} />
                         </div>
                     </Swiper>
-                </div>
+                </div> */}
 
-                {/* UPCOMING EVENTS */}
+                {/* UPCOMING EVENTS
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-950 mt-16 mb-4">
                     UPCOMING EVENTS
                 </h1>
@@ -243,7 +243,7 @@ export default function ResourcePage() {
                         </a>
                     ))}
 
-                </div>
+                </div> */}
             </div>
 
         </>

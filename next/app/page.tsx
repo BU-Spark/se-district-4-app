@@ -1,9 +1,8 @@
 import { Header } from "@/app/components/Header";
 import { HeroSection } from "@/app/components/HeroSection";
 import { QuickLinks } from "@/app/components/QuickLinks";
-import { UpcomingEvents } from "@/app/components/UpcomingEvents";
+// import { UpcomingEvents } from "@/app/components/UpcomingEvents";
 import Dfour from "./components/Dfour";
-import ResourcePage from "@/resources/ResourcePage";
 import { MailingPopup } from "./components/mailingpopup";
 import { MailingListBanner } from "./components/MailingBanner";
 import { FooterBanner } from "./components/footer";
@@ -15,9 +14,8 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <QuickLinks />
-      <UpcomingEvents />
+      {/* <UpcomingEvents /> */}
       <Dfour />
-      <ResourcePage />
       <MailingListBanner />
       <MailingPopup />
       <FooterBanner />
