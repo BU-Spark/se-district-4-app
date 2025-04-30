@@ -140,9 +140,7 @@ NEXT_PUBLIC_CALENDAR_ID=yourid@group.calendar.google.com
 - make sure all buttons navigate to webpages, most are empty right now
 - flesh out the gallery feature  
 
-We commented out the Events from the navbar,
-the calendar,
-the upcoming events from the main page,
-the news and update and upcoming events from the resource page,
-We changed the Quick links in the main page ,we have added different resources from the figma as we did not had the links.
+We commented upcoming events from the main page and the resource page,
+the news and updates from the resource page,
+We changed the Quick links in the main page -- the resources are different from those suggested on the figma.
 
