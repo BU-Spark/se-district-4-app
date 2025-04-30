@@ -17,12 +17,12 @@ export function Header() {
     { label: "Home", href: "/" },
     // { label: "Guide", href: "#" },
     { label: "Public Notice", href: "https://www.boston.gov/public-notices" },
-    // { label: "Events", href: "/calendar" }, // <-- now links to calendar
+    { label: "Events", href: "/calendar" }, // <-- now links to calendar
     { label: "Social Media", href: "/media" }, // <-- now links to /media
   ];
 
   return (
-    <header className="bg-[#0E1A2B] text-white py-8 px-6 flex items-center w-full justify-between relative">
+    <header className="bg-[#1A2C56] text-white py-8 px-6 flex items-center w-full justify-between relative">
       <Link href="/" passHref>
 
         <Image
@@ -42,7 +42,7 @@ export function Header() {
       </button>
       <nav
 
-        className={`absolute top-full left-0 w-full bg-[#0E1A2B] text-center transition-all duration-300 ease-in-out md:static md:flex md:space-x-12 text-sm lora ${menuOpen ? "block pt-6 pb-6" : "hidden"
+        className={`absolute top-full left-0 w-full bg-[#1A2C56] text-center transition-all duration-300 ease-in-out md:static md:flex md:space-x-12 text-sm lora ${menuOpen ? "block pt-6 pb-6" : "hidden"
           }`}
 
       // className={`absolute top-full left-0 w-full bg-[#0E1A2B] text-center transition-all duration-300 ease-in-out md:static md:flex md:space-x-12 text-sm lora ${menuOpen ? "block pt-6 pb-6" : "hidden"}`}
