@@ -18,7 +18,6 @@ export default function HomePage() {
       <Dfour />
       <MailingListBanner />
       <MailingPopup />
-      <FooterBanner />
     </main>
   );
 }
