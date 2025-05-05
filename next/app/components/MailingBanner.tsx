@@ -9,10 +9,10 @@ export function MailingListBanner() {
         {/* Left side: text */}
         <div className="md:w-2/3 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold mb-2 lora">
-            <span className="italic">Join our</span> <span className="font-bold">Mailing List</span>
+            <span className="italic text-center">Join our Mailing List</span> 
           </h2>
           <p className="text-gray-600">
-            Subscribe to our mailing list to receive the latest news and updates every week
+            Subscribe to our mailing list to receive the latest news and updates every week.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export function MailingListBanner() {
             href="https://lp.constantcontactpages.com/su/6umkRa8"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1A2C56] text-white font-semibold py-3 px-8 rounded-md hover:bg-[#15203e] text-center"
+            className="bg-[#1A2C56] text-white font-semibold py-3 px-8 rounded-md hover:bg-[#D22D23] text-center"
           >
             SUBSCRIBE
           </a>

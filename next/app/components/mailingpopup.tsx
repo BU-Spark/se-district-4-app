@@ -27,7 +27,7 @@ export function MailingPopup() {
           href="https://lp.constantcontactpages.com/su/6umkRa8"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center bg-[#1A2C56] text-white py-2 px-4 rounded-md text-sm font-semibold hover:bg-[#e67e22] transition duration-300"
+          className="flex items-center bg-[#1A2C56] text-white py-2 px-4 rounded-md text-sm font-semibold hover:bg-[#D22D23] transition duration-300"
         >
           <FaEnvelope className="mr-2" size={20} />
           Subscribe
@@ -36,7 +36,7 @@ export function MailingPopup() {
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="text-[#1A2C56] bg-transparent hover:bg-[#363636] hover:text-white p-2 rounded-full"
+          className="text-[#1A2C56] bg-transparent hover:bg-[#D22D23] hover:text-white p-2 rounded-full"
         >
           <FaTimes size={20} />
         </button>
