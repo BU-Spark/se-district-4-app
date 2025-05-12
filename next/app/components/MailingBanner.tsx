@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 export function MailingListBanner() {
   return (
     <div className="flex justify-center mt-12 mb-12 bg-white">

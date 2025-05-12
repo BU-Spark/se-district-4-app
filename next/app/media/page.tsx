@@ -29,9 +29,8 @@ export default function MediaPage() {
           console.error("Response error:", errorText);
           throw new Error("Failed to fetch data");
         }
-
         const data = await response.json();
-        const formatted = data.slice(0, 20).map((item: any, idx: number) => {
+        const formatted = data.slice(0, 20).map((item: {timestamp: string; shortCode: string; caption?: string}) => {
           const rawTimestamp = item.timestamp;
           const readableDate = rawTimestamp
             ? new Date(rawTimestamp).toLocaleDateString("en-US", {

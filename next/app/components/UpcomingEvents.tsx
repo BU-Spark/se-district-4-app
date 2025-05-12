@@ -1,12 +1,12 @@
 "use client";
 
-import { EventCard } from "./EventCard";
-import { useState } from "react";
+//import { EventCard } from "./EventCard";
+//import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+//import Image from "next/image";
 
 export function UpcomingEvents() {
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  //const [selectedEvent, setSelectedEvent] = useState(null);
   const router = useRouter();
 
   // const events = [
