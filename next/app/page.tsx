@@ -3,7 +3,7 @@ import { HeroSection } from "@/app/components/HeroSection";
 import { QuickLinks } from "@/app/components/QuickLinks";
 import { UpcomingEvents } from "@/app/components/UpcomingEvents";
 import Dfour from "./components/Dfour";
-import { MailingPopup } from "./components/MailingPopup";
+import { MailingPopup } from "@/app/components/MailingPopup";
 import { MailingListBanner } from "./components/MailingBanner";
 //import { FooterBanner } from "./components/footer";
 
